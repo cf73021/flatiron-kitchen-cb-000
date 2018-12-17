@@ -3,6 +3,7 @@
   <%= f.label :name %>
   <%= f.text_field :name %>
 </p>
+<h2>Ingredients</h2>
 <p>
   <%= f.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
 </p>
