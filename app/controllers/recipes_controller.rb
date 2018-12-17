@@ -26,7 +26,6 @@ class RecipesController < ApplicationController
     @ingredients = @recipe.ingredients
     @recipe.ingredients_attributes = ingredients_params
     @recipe.update(recipe_params)
-
     redirect_to recipe_path(@recipe)
   end
 
