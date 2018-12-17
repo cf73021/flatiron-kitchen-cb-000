@@ -8,10 +8,10 @@
   <%= f.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
 </p>
 <h2> New Ingredients to Add </h2>
-<br />
 <p>
   <%= f.fields_for :ingredients, recipe.ingredients.build do |r| %>
     <%= r.text_field :name %>
   <% end %>
+  <br />
   <%= f.submit %>
 <% end %>
